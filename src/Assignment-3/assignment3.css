@@ -1,7 +1,49 @@
-/* Our CSS file. */
+.container{
+    width:100%;
+    height: 100%;
+}
+
+.common-block, .common-inline{
+    width: 60%;
+    height: 300px;
+    text-align: center;
+    background-color: grey;
+    border: 1px solid black;
+    margin: 10px 20px;
+}
+.left-adustment, .right-adjustment{
+    display: inline-block;
+    width: 40%;
+}
+.left-adustment{
+    vertical-align: top;
+}
+.right-adjustment{
+    height: inherit;
+}
 
 
-.container, .content {
-width: 100%;
-height: 100%;
+#wiki{
+    height:200px;
+    width:100%;
+    margin: 20px;
+  
+}
+.bttn{
+background-color: black;
+color: white;
+}
+.block{
+    display: block;
+    width: 100%;
+}
+.bottom-block{
+    height: 100px;
+}
+#bottom-wiki{
+    height:100px;
+    width:90%;
+    margin:25px;
+    
+
 }
