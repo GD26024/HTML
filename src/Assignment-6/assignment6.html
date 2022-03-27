@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<script src="bundle.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div id="container">
+
+	<!-- Start your code from here -->
+    <main>
+        <form class="from">
+            <div class="info">
+                <p><label class="label">Characters:</label><span class="count">00</span></p>
+                <p><label class="label">Threads:</label><span class="threadcount">00</span></p>
+
+            </div>
+            <div class="container">
+                <textarea class="textarea" placeholder="The character limit for ecah thread is 250 " required wrap="soft" onkeyup="textInfo(this);"></textarea>
+<button type="submit" class="btn">Thread</button>
+            </div>
+
+        </form>
+    </main>
+
+
+	<!-- End your code -->
+
+	</div>
+
+	<script type="text/javascript">
+	// write your javascript code here
+const dom=(s)=>document.querySelector(s);
+const form=dom('.form');
+const charCount=dom('.count');
+const threadCount=dom('.threadcount');
+ 
+const size=275;
+const threadArr=[]
+
+function textInfo(event){
+    let length=event.value.length;
+    charCount.innerHTML=length;
+    let Nthreads=Math.ceil(length/size);
+    threadCount.innerHTML=Nthreads;
+}
+
+
+
+
+	</script>
+
+</body>
+<script>
+/* DO NOT EDIT THIS CODE- WRITTERN TO PREVENT CSS CACHING */	  
+	// Get HTML head element
+	var head = document.getElementsByTagName('HEAD')[0]; 
+	// Create new link Element
+	var link = document.createElement('link');
+	// set the attributes for link element 
+	link.rel = 'stylesheet'; 
+	link.type = 'text/css';
+	link.href = './assignment6.css?v='+ new Date().getTime(); 
+	// Append link element to HTML head
+	head.appendChild(link); 
+	/* DO NOT EDIT THIS CODE- WRITTERN TO PREVENT CSS CACHING */	  
+</script> 
+</html>
